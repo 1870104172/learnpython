@@ -1,0 +1,12 @@
+占位符              替换内容
+%d		    整数
+%f		    浮点数
+%s 		    字符串
+%x 		    十六进制数
+
+eg:
+>>>'Hello, %s' % 'world'
+'Hello, world'
+>>>'Hi, %S, you have $%d.' % ('Michael', 1000000)
+'Hi, Michael, you have $1000000.'
+
