@@ -1,3 +1,40 @@
+python字符串：
+单个字符串编码，python提供ord()函数获取字符的整数表示，chr()函数把编码转换为对应的字符：
+eg:
+>>>ord('A')
+65
+>>>ord('中')
+20013
+>>>chr(66)
+'B'
+>>>chr(25991)
+'文'
+十六进制用str写
+>>>'\u4e2d\u6587'
+'中文'
+python对bytes类型数据用b前缀的引号表示
+
+转化：str用encode()指定bytes
+>>>'ABC'.encode('ascii')
+b'ABC'
+>>>'中文'.encode('utf-8')
+b'\xe4\xb8\xad\xe6\x96\x87'
+
+bytes用decode()指定
+>>>b'ABC'.decode('ascii')
+'ABC'
+>>>b'\xe4\xb8\xad\xe6\x96\x87'.decode('utf-8')
+'中文'
+bytes中有小部分无效字节，可传入errors='ignore'忽略
+
+计算str包含多少字符，可以用了len()函数：
+>>>len('ABC')
+3
+>>>len('中文'.edcode('utf-8'))
+6
+
+格式化：
+
 占位符              替换内容
 %d		    整数
 %f		    浮点数
