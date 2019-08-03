@@ -26,6 +26,7 @@ bytes用decode()指定
 >>>b'\xe4\xb8\xad\xe6\x96\x87'.decode('utf-8')
 '中文'
 bytes中有小部分无效字节，可传入errors='ignore'忽略
+b'\xe5\x8d\xa0\xe7'.decode('utf-8',errors='ignore')
 
 计算str包含多少字符，可以用了len()函数：
 >>>len('ABC')
@@ -71,4 +72,4 @@ s1 = 72
 s2 = 85
 r = (s2 - s1)/s1
 print（'%.1f%%'%r)
-print('{0:.1f}%'.format(r))
+print('{0:.1f}%'.format(r)
