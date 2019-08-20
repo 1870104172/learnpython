@@ -1,0 +1,4 @@
+print()接受多字符串，可用，隔开 或用空格+ 拼接
+
+name = input('please enter your name:')
+print('Hello,',name)
