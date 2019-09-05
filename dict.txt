@@ -1,0 +1,53 @@
+dict
+>>> d = {'Michael':95,'Bob':75,'Tracy':85}
+>>> d['Michael']
+95
+通过key放入dict
+d['A']=10
+d['A']
+10
+多次输入key后面的冲掉前面的
+避免key不存在用in判断
+'T'in d
+False
+用get()方法,不存在返回None（不显示）,或指定的value
+d.get('T')
+d.get('T',-1)
+-1
+d.pop('Bob')为删除，对应的value也会被删
+和List比
+查找和插入速度快，但占内存大
+查找插入随元素增加，占空间少
+
+dict的key是不可变对象
+
+
+set
+set和dict类似但不储存value，key不重复
+s = set([1,1,2,2,3])
+s
+{1,2,3}
+add(key)k可添加元素，可以重复，但不会有效果
+s.add(4)
+s.remove(4)删除元素
+无序和无重复可做交集和并集
+s1 = set([1,2,3])
+s2 = set([2,3,4]
+s1&s2
+{2,3}
+s1 | s2
+{1,2,3,4}
+
+str是不可变对象 list可变
+a = ['c','b','a']
+a.sort()
+a
+['a','b','c']
+
+a = 'abc'
+a.replace('a','A')
+'Abc'
+a
+'abc'
+变量a的内容不变创建了新的b指向新字符'Abc'
+
